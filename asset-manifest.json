@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/planktonics-chat/static/css/main.e630d35e.chunk.css",
+    "main.js": "/planktonics-chat/static/js/main.62d4321b.chunk.js",
+    "main.js.map": "/planktonics-chat/static/js/main.62d4321b.chunk.js.map",
+    "runtime-main.js": "/planktonics-chat/static/js/runtime-main.d96b20ed.js",
+    "runtime-main.js.map": "/planktonics-chat/static/js/runtime-main.d96b20ed.js.map",
+    "static/css/2.786ae0dd.chunk.css": "/planktonics-chat/static/css/2.786ae0dd.chunk.css",
+    "static/js/2.9ea1d2d7.chunk.js": "/planktonics-chat/static/js/2.9ea1d2d7.chunk.js",
+    "static/js/2.9ea1d2d7.chunk.js.map": "/planktonics-chat/static/js/2.9ea1d2d7.chunk.js.map",
+    "index.html": "/planktonics-chat/index.html",
+    "static/css/2.786ae0dd.chunk.css.map": "/planktonics-chat/static/css/2.786ae0dd.chunk.css.map",
+    "static/css/main.e630d35e.chunk.css.map": "/planktonics-chat/static/css/main.e630d35e.chunk.css.map",
+    "static/js/2.9ea1d2d7.chunk.js.LICENSE.txt": "/planktonics-chat/static/js/2.9ea1d2d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d96b20ed.js",
+    "static/css/2.786ae0dd.chunk.css",
+    "static/js/2.9ea1d2d7.chunk.js",
+    "static/css/main.e630d35e.chunk.css",
+    "static/js/main.62d4321b.chunk.js"
+  ]
+}
