@@ -1,7 +1,7 @@
 import axios from 'axios'
 import AuthService from "../services/AuthService";
 
-export const API_URL = `http://192.168.3.4:3000/api/v1`
+export const API_URL = `https://planktoniks.herokuapp.com/api/v1`
 
 const api = axios.create({
     withCredentials: true,
