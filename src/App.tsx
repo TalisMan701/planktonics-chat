@@ -11,7 +11,8 @@ const App:FC = () => {
     const {isAuth} = useTypedSelector(state => state.auth)
     const {checkAuth} = useActions()
     useEffect(()=>{
-        checkAuth()
+        if(localStorage.getItem("tokenRefresh"))
+            checkAuth()
     },[])
   return (
     <Layout style={{overflow: "hidden"}}>
