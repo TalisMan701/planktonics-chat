@@ -11,6 +11,7 @@ const ChatForm: FC = () => {
 
     const submit = () => {
         sendMessage(id, message)
+        setMessage('')
     }
     return (
         <div style={{height: "10%", width: "100%", marginTop: 12}}>
@@ -25,6 +26,11 @@ const ChatForm: FC = () => {
                     >
                         <Input.TextArea
                             value={message}
+                            onKeyPress={e => {
+                                if(e.key === "Enter"){
+                                    submit()
+                                }
+                            }}
                             onChange={(e)=>setMessage(e.target.value)}
                             placeholder="Введите сообщение..."
                             autoSize={{ minRows: 1, maxRows: 2}}
