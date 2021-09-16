@@ -15,37 +15,28 @@ const ChatForm: FC = () => {
     }
     return (
         <div style={{height: "10%", width: "100%", marginTop: 12}}>
-            <Form
-                onFinish={submit}
-            >
-                <Row>
-                    <Form.Item
-                        style={{flexGrow: 1}}
-                        name="messageText"
-                        rules={[rules.required('Нельзя отправлять пустое сообщение!')]}
-                    >
-                        <Input.TextArea
-                            value={message}
-                            onKeyPress={e => {
-                                if(e.key === "Enter"){
-                                    submit()
-                                }
-                            }}
-                            onChange={(e)=>setMessage(e.target.value)}
-                            placeholder="Введите сообщение..."
-                            autoSize={{ minRows: 1, maxRows: 2}}
-                        />
-                    </Form.Item>
-                    <Form.Item>
-                        <Button style={{height: "100%"}} type="primary" htmlType="submit" loading={false}>
-                            Отправить
-                        </Button>
-                    </Form.Item>
-                </Row>
-                {error && <div style={{color: "red"}}>
-                    {error}
-				</div>}
-            </Form>
+            <Row>
+                <div
+                    style={{flexGrow: 1}}
+                >
+                    <Input
+                        value={message}
+                        onKeyPress={e=>{
+                            if(e.key === "Enter"){
+                                submit()
+                            }
+                        }}
+                        onChange={(e)=>setMessage(e.target.value)}
+                        placeholder="Введите сообщение..."
+                    />
+                </div>
+                <Button style={{height: "100%"}} type="primary" onClick={submit} loading={false}>
+                    Отправить
+                </Button>
+            </Row>
+            {error && <div style={{color: "red"}}>
+                {error}
+            </div>}
         </div>
     );
 };
